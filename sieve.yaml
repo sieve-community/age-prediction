@@ -1,0 +1,17 @@
+model_version: "0.0.1"
+build:
+  gpu: true
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.8"
+  python_packages:
+    - "requests==2.28.1"
+    - "torch==1.8.1" #Needed for cuda compatibility
+    - "fastai==2.7.9"
+    - "scikit-image==0.19.3"
+    - "opencv_python_headless==4.5.5.64"
+predict: "predictor.py:AgePredictor"
+model_name: "age-predictor"
+private: false
+iteration: "objects"
