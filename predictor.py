@@ -7,6 +7,7 @@ import skimage
 from fastai.vision.all import *
 import cv2
 import torch
+import requests
 
 class AgePredictor(ObjectPredictor):
 
